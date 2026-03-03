@@ -33,7 +33,7 @@ class AuthService {
   }
 
   /// URL de redirección después del OAuth (para web).
-  /// Añade esta URL en Supabase Dashboard > Auth > URL Configuration > Redirect URLs
+  /// Añade tu URL de Vercel en Supabase: Auth > URL Configuration > Redirect URLs
   String? _getRedirectUrl() {
     if (kIsWeb) {
       return Uri.base.origin;
